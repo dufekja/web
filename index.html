@@ -2,9 +2,109 @@
 <html lang="cs">
 <head>
   <meta charset="UTF-8">
-  <title>Jan Dufek</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Jan Dufek – Software Developer</title>
+  <meta name="description" content="Osobní portfolio vývojáře Jan Dufek. Personal portfolio of Jan Dufek, software developer.">
+  <meta name="author" content="Jan Dufek">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dufek.dev/">
+  <meta name="theme-color" content="#fbeff3">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Jan Dufek – Software Developer">
+  <meta property="og:description" content="Osobní portfolio vývojáře Jan Dufek.">
+  <meta property="og:url" content="https://dufek.dev/">
+  <meta property="og:locale" content="cs_CZ">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jan Dufek – Software Developer">
+  <meta name="twitter:description" content="Osobní portfolio vývojáře Jan Dufek.">
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jan Dufek",
+    "jobTitle": "Software Developer",
+    "url": "https://dufek.dev/"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #fdf6f0;
+      --ink: #4a3f4f;
+      --soft: #8a7d8f;
+      --pink: #f9cfdc;
+      --lavender: #d9d0f5;
+      --mint: #cdeedd;
+      --peach: #fde2c8;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #2b2530; --ink: #f6ecf3; --soft: #bfb2c6;
+        --pink: #6b3d55; --lavender: #4d4380; --mint: #2f5c4a; --peach: #6e4b30;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; }
+    html, body { height: 100%; }
+    body {
+      background: var(--bg);
+      color: var(--ink);
+      font-family: "Fraunces", Georgia, "Times New Roman", serif;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: env(safe-area-inset-top, 0) 1.5rem env(safe-area-inset-bottom, 0);
+    }
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(70px);
+      opacity: .8;
+      z-index: 0;
+    }
+    .b1 { width: 42vmax; height: 42vmax; background: var(--pink);     top: -12vmax; left: -10vmax; }
+    .b2 { width: 38vmax; height: 38vmax; background: var(--lavender); bottom: -14vmax; right: -8vmax; }
+    .b3 { width: 28vmax; height: 28vmax; background: var(--mint);     bottom: 6vmax; left: 8vmax; }
+    .b4 { width: 24vmax; height: 24vmax; background: var(--peach);    top: 4vmax; right: 14vmax; }
+
+    main { position: relative; z-index: 1; text-align: center; }
+    h1 {
+      font-weight: 600;
+      font-size: clamp(2.6rem, 9vw, 6.5rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+    }
+    p {
+      margin-top: 1.1rem;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      font-size: clamp(1rem, 2.4vw, 1.3rem);
+      color: var(--soft);
+    }
+    h1, p { animation: rise .9s ease-out both; }
+    p { animation-delay: .15s; }
+    @keyframes rise { from { opacity: 0; transform: translateY(14px); } }
+    @media (prefers-reduced-motion: reduce) { h1, p { animation: none; } }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&display=swap">
 </head>
 <body>
-	:)
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="blob b3" aria-hidden="true"></div>
+  <div class="blob b4" aria-hidden="true"></div>
+
+  <main>
+    <h1>Jan Dufek</h1>
+    <p>Software developer</p>
+  </main>
 </body>
 </html>
